@@ -21,10 +21,13 @@ function helloName( Clay ) {
 console.log(helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
+function addNumbers( firstNumber, secondNumber ) {
   // return firstNumber + secondNumber;
+  console.log( 'In addNumbers:', firstNumber, secondNumber );
+  let answer = firstNumber + secondNumber;
+  return answer;
 }
-
+console.log( 'Running addNumbers with 2 & 3:', addNumbers( 2, 3 ) );
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( ){
