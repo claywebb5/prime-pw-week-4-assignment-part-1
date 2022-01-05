@@ -18,6 +18,7 @@ function helloName( Clay ) {
   return 'Hello Clay';
 }
 // Remember to call the function to test
+helloName();
 console.log(helloName());
 
 // 3. Function to add two numbers together & return the result
