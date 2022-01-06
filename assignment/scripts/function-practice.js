@@ -41,7 +41,7 @@ console.log( 'Running multiplyThree with 2, 2, & 2', multiplyThree( 2, 2, 2 ) );
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
-  console.log( 'in isPositive' );
+  console.log('In isPositive');
   if ( number > 0 ){
     return true;
   }
@@ -66,15 +66,28 @@ function getLast( array ) {
   array = [names.pop()];
   return array;
 }
-console.log(getLast());
+console.log('The last item is', getLast());
 
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
 
+
+function find( value, array ){
+  console.log('In find');
+  for ( let i=0; i<array.length; i++) {
+    if ( array[i] === value ){
+      console.log( 'Here he is!!' );  // Added this log as an extra emphasis when the code finds the value, please let me know if this should not be here.
+      return true;
+    }
+  }
+  return false;
 }
+console.log( 'Is the first name Jim?', find('Jim', names));
+console.log( 'Is the first name Clay?', find('Clay', names));
+console.log( 'Is the first name Billy?', find('Billy', names));
+
 
 // ----------------------
 // Stretch Goals
