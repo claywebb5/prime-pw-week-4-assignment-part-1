@@ -1,4 +1,4 @@
-console.log('***** Function Practice *****')
+console.log('***** Function Practice *****');
 
 // Add the required code to complete the functions below
 // After _each_ function, use a console log to call the function
@@ -59,23 +59,14 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
 
-
-
-
-
-// COMPLETELY LOST FOR #6
-let names = [];
+let names = [ 'Clay', 'Joe', 'Mike', 'Bruce' ];
 
 function getLast( array ) {
-  console.log( 'In getLast', array );
-  names.push( array );
-  return names;
-} // COMPLETELY LOST FOR #6
-
-
-
-
-
+  console.log( 'In getLast' );
+  array = [names.pop()];
+  return array;
+}
+console.log(getLast());
 
 
 // 7. Function to find a value in an array. Return true if the
@@ -98,7 +89,7 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
-  let sum = 0
+  let sum = 0;
   // TODO: loop to add items
   return sum;
 }
