@@ -118,9 +118,9 @@ console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 // }  // WHACKED THESE OUT TO EDIT THE ORDER
 
 const numArray = [ 1, 2, 3, 4 ];
-let sum = 0;
 
 function sumAll() {
+  let sum = 0; // Declared sum inside the function to keep it locally scoped per instruction.
   for (let i in numArray) {
     sum += numArray[i];
   }
