@@ -15,6 +15,7 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
+  console.log('In helloName, this name is:', name ); // This console log inside the function will make sure that this part of the function is executing correctly.
   return name + '!';
 }
 // Remember to call the function to test
@@ -62,10 +63,10 @@ let names = [ 'Clay', 'Joe', 'Mike', 'Bruce' ];
 
 function getLast( array ) {
   console.log( 'In getLast' );
-  array = [names.pop()];
+  array = names.pop(); // The actual value is returned without the array.
   return array;
 }
-console.log('The last item is', getLast());
+console.log('The last item is:', getLast()); // This will log "The last item is: Bruce".
 
 
 // 7. Function to find a value in an array. Return true if the
